@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.mainContainor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.swaiper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    padding-top: 100px;
+}
+.prev{
+    position: absolute;
+    left: 0px;
+    font-weight: 900;
+    font-size: 50px;
+}
+.next{
+    position: absolute;
+    right: 0px;
+    font-weight: 900;
+    font-size: 50px;
+}
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    height: 300px;
+    overflow-x: auto;
+}
+.slide::-webkit-scrollbar{
+    width: 0;
+}
+.slides{
+    min-width: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    border: 2px solid yellow;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.btn{
+    width: 100%;
+    height: 100px;
+    line-height: 50px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    position: relative;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    z-index: 5;
+    background-color: aquamarine;
+    border-radius: 50%;
+    margin: 10px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.active{
+    background-color: aqua;
+    color: blue;
+}
+.activeDot{
+    background-color: red;
+}
